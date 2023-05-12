@@ -9,7 +9,6 @@ public class Main {
 
         RomanNumeralGUI myGUI = new RomanNumeralGUI();
 
-        RomanNumeral val = new RomanNumeral("MMXVAII");
 
 
     }
