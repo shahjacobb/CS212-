@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 /**
- * I go over it down below, but the convert() method has the logic for conversion + the HashMap needed to convert.
+ * The class definition for the Roman Numeral. I've been using a hashmap this entire time to the conversion, but writing comments here anyways.
  */
 public class RomanNumeral {
     String romanNumeral;
@@ -16,13 +16,14 @@ public class RomanNumeral {
     }
 
 
+    /**
+     *
+     * @param romanNumeral takes in a string to be supplied to the class so that the convert method can convert it
+     * the convert method converts the value into the integer representation and then assigns it to convertedArabicValue
+     */
     public RomanNumeral(String romanNumeral) {
         this.romanNumeral = romanNumeral;
-        try {
-            this.convertedArabicValue = convert(romanNumeral);
-        } catch (IllegalRomanNumeralException e) {
-            System.out.println(romanNumeral + " is not a valid Roman Numeral.");
-        }
+        this.convertedArabicValue = convert(romanNumeral);
 
     }
 
